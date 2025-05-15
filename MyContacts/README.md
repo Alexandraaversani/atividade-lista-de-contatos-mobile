@@ -1,20 +1,30 @@
-# Expo Router Example
+📱 MyContacts - Gerenciador de Contatos
 
-Use [`expo-router`](https://docs.expo.dev/router/introduction/) to build native navigation using files in the `app/` directory.
+📌 Sobre o Projeto
+Aplicativo mobile para gerenciar seus contatos pessoais, desenvolvido com:
 
-## 🚀 How to use
+- React Native
 
-```sh
-npx create-expo-app -e with-router
-```
+- Expo
 
-## Deploy
+- React Native Paper
 
-Deploy on all platforms with Expo Application Services (EAS).
+. Funcionalidades
 
-- Deploy the website: `npx eas-cli deploy` — [Learn more](https://docs.expo.dev/eas/hosting/get-started/)
-- Deploy on iOS and Android using: `npx eas-cli build` — [Learn more](https://expo.dev/eas)
+- Adicionar novos contatos
 
-## 📝 Notes
+- Visualizar lista completa
 
-- [Expo Router: Docs](https://docs.expo.dev/router/introduction/)
+- Editar informações
+
+- Excluir contatos
+
+- Organizar por categorias (Trabalho, Pessoal, Família)
+
+. Estrutura do projeto:
+
+- app/_layout.js - Configure a navegação e o tema do Paper
+- app/index.js - Lista de contatos e modal para adicionar/editar
+- app/settings.js - Tela simples de configurações
+- components/ContactItem.js - Componente para exibir cada contato
+
