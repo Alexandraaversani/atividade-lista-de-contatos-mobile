@@ -5,7 +5,7 @@ export default function Settings() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Configurações</Text>
-            <Text style={styles.text}>Versão 1.0.0</Text>
+            <Text style={styles.text}>Aqui você pode configurar suas preferências</Text>
         </View>
     );
 }
