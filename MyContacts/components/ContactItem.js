@@ -1,5 +1,5 @@
 import { View, StyleSheet } from 'react-native';
-import { List, Avatar, Text } from 'react-native-paper';
+import { List, Avatar} from 'react-native-paper';
 
 export default function ContactItem({ contact, onEdit, onDelete }) {
   return (
@@ -15,16 +15,19 @@ export default function ContactItem({ contact, onEdit, onDelete }) {
       )}
       right={() => (
         <View style={styles.actions}>
-          <Button mode="text" onPress={() => onEdit(contact)}>
-            Editar
-          </Button>
-          <Button 
-            mode="text" 
-            textColor="#FF3B30"
+          <IconButton
+            icon="pencil"
+            mode="outlined"
+            onPress={() => onEdit(contact)}
+            style={styles.editButton}
+          />
+          <IconButton
+            icon="trash-can-outline"
+            mode="outlined"
             onPress={() => onDelete(contact.id)}
-          >
-            Excluir
-          </Button>
+            style={styles.deleteButton}
+            iconColor="#FF3B30"
+          />
         </View>
       )}
     />
@@ -43,5 +46,11 @@ const styles = StyleSheet.create({
   actions: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  editButton: {
+    marginRight: 8,
+  },
+  deleteButton: {
+    marginLeft: 8,
   },
 });

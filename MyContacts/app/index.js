@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { FAB, List, Dialog, Portal, TextInput, Button, Avatar, Text, Chip } from 'react-native-paper';
+import { useRouter } from 'expo-router'; 
 
 export default function Home() {
+  const router = useRouter();
   const [contacts, setContacts] = useState([]);
   const [visible, setVisible] = useState(false);
   const [name, setName] = useState('');
@@ -161,6 +163,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+    backgroundColor: '#000FF',
   },
   fab: {
     position: 'absolute',
